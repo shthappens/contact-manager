@@ -9,3 +9,16 @@
     </li>
   <% end %>
 </ul>
+
+<h2>Search</h2>
+<form action="/search" method="get">
+  First Name:
+  <input type="search" name="first_name">
+  Last Name:
+  <input type="search" name="last_name">
+  <input type="submit">
+</form>
+
+<h2><a href="/submit">Click Here to Add a Contact</a></h2>
+
+<a href="/contacts?page=<%= @last_page%>">Last Page</a> | <a href="/contacts?page=<%= @next_page%>">Next Page</a>
